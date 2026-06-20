@@ -8,6 +8,10 @@ import { defineConfig, fontProviders } from 'astro/config';
 export default defineConfig({
 	site: 'https://navels.dev',
 	integrations: [mdx(), sitemap()],
+	markdown: {
+		// Light code-block theme to match the minimalist palette.
+		shikiConfig: { theme: 'github-light' },
+	},
 	fonts: [
 		{
 			provider: fontProviders.local(),
