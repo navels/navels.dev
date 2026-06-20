@@ -1,0 +1,21 @@
+---
+// Temporary: navels.dev lands on the only post for now. The redirect runs in
+// <head> via location.replace before the body paints, so there's no visible
+// "Redirecting…" flash; the meta-refresh is a no-JS fallback. location.replace
+// keeps it out of history (no back-button loop). Remove this file and restore a
+// landing page once there's more than one post.
+const dest = '/blog/neal/';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<script is:inline>window.location.replace('/blog/neal/');</script>
+		<meta http-equiv="refresh" content={`0; url=${dest}`} />
+		<meta name="robots" content="noindex" />
+		<link rel="canonical" href={`https://navels.dev${dest}`} />
+		<title>navels.dev</title>
+	</head>
+	<body></body>
+</html>
