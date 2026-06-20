@@ -7,6 +7,11 @@ import { defineConfig, fontProviders } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://navels.dev',
+	// Temporary: navels.dev lands on the only post for now. Remove this redirect
+	// (and restore a landing index) once there's more than one post.
+	redirects: {
+		'/': { status: 302, destination: '/blog/neal/' },
+	},
 	integrations: [mdx(), sitemap()],
 	fonts: [
 		{
