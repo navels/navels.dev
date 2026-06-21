@@ -4,7 +4,7 @@ description: 'neal is an open-source coding agent that puts a different model in
 pubDate: '2026-06-20'
 ---
 
-I built [neal](https://github.com/navels/neal), an open-source coding agent that **coordinates multiple models** — a planner, a coder, and a reviewer, each its own model — in a scoped loop you run from your terminal. It reads your actual source, journals every step so a killed run resumes, and lets you put a different model in each seat.
+I built [neal](https://github.com/navels/neal), an agent harness that **coordinates multiple models** — a planner, a coder, and a reviewer, each its own model — in a scoped loop you run from your terminal. It reads your actual source, journals every step so a killed run resumes, and lets you put a different model in each seat.
 
 The bet behind it: **how you coordinate models around a task beats reaching for one bigger model.** Three pieces make the coordination work.
 
